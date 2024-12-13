@@ -45,4 +45,4 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [Enneura]()
 
 ## Notes
-- 
+-

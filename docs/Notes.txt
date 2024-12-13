@@ -1,0 +1,5 @@
+Convert the static code in /public (index.html, terminal.css, and wrapper.js) to be deployed using node (pnpm), using Typescript, Remix and vite. It needs to work with Cloudflare Pages. Files and logic should be organized and split up nicely. 
+
+Use the attached graphic to re-design the layout to be more like this mockup. I want to be able to resize the terminal by dragging the "Terminal" bar. And add a full screen button (html symbol) for the terminal window.
+
+https://github.com/aliasfoxkde/bolt-terminal

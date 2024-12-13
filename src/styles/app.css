@@ -1,0 +1,97 @@
+:root {
+  --terminal-height: 250px;
+  --sidebar-width: 200px;
+}
+
+/* General Layout */
+#layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#sidebar {
+  width: var(--sidebar-width);
+  background-color: #1e1e1e;
+  color: #fff;
+  overflow-y: auto;
+  position: relative;
+}
+
+#sidebar-resize-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  cursor: ew-resize;
+}
+
+#main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2d2d;
+}
+
+/* Editor Pane */
+#editor-pane {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Terminal Bar */
+#terminal-bar {
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: ns-resize;
+  user-select: none;
+}
+
+#terminal-bar span {
+  font-weight: bold;
+}
+
+/* Terminal Container */
+#terminal-container {
+  width: 100%;
+  height: var(--terminal-height);
+  background-color: #000;
+}
+
+/* Full Screen Styles */
+#layout.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#layout.fullscreen #sidebar,
+#layout.fullscreen #editor-pane {
+  display: none;
+}
+
+#layout.fullscreen #terminal-container {
+  height: calc(100vh - 30px); /* Adjust for terminal bar height */
+}
+
+#layout.fullscreen #terminal-bar {
+  cursor: default;
+}
+
+/* Full Screen Button */
+#fullscreen-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2em;
+}
