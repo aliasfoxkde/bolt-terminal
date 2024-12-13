@@ -1,0 +1,31 @@
+{
+  "name": "bolt-terminal",
+  "version": "0.1.0",
+  "description": "[Bolt-Terminal (demo here!)](https://terminal.boltdiy.com) is a project to replace the current WebContainer implimentation of the \"Terminal\" used by \r Bolt.New and Bolt.Diy with an open source one, so that it is easier to improve, change, and maintain. \r The goal is to improve maintaining and extend the capabilities of the terminal by adding Python \r support (Pyodide), Git (isomorphic-git), Node (npm & pnpm), common Linux commands (BusyBox as reference), \r Persistent storage (retained on reload), cloud storage integration (AWS, OneDrive, Mega.nz, etc), and more.",
+  "main": "vite.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "jquery.terminal": "^2.44.1",
+    "pyodide": "^0.26.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^4.0.0"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT"
+}
