@@ -1,9 +1,12 @@
-// remix.config.js
+/**
+ * @type {import('@remix-run/dev').AppConfig}
+ */
 module.exports = {
-  // Specify where the build folder will be located
   appDirectory: "app",
-  // Specify where Remix should look for static assets
   assetsBuildDirectory: "public/build",
-  // Public URL for your app
   publicPath: "/build/",
+  serverBuildPath: "build/index.js",
+  server: "./server.js",
+  devServerBroadcastDelay: 1000,
+  ignoredRouteFiles: [".*"],
 };

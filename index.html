@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Reference: https://pyodide.org/en/stable/console.html -->
   <head>
     <meta charset="UTF-8" />
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/jquery.terminal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/unix_formatting.min.js"></script>
-    <script defer data-domain="pyodide.org" src="https://plausible.io/js/plausible.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/css/jquery.terminal.min.css" rel="stylesheet" />
-    <link href="./public/pyodide.css" rel="stylesheet" />
+    <title>Bolt Terminal</title>
   </head>
-
   <body>
-    <div id="loading"></div>
-    <script async type="text/javascript" src="./public/wrapper.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

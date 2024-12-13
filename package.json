@@ -1,29 +1,39 @@
 {
   "name": "bolt-terminal",
   "version": "0.1.0",
-  "description": "[Bolt-Terminal (demo here!)](https://terminal.boltdiy.com) is a project to replace the current WebContainer implimentation of the \"Terminal\" used by \r Bolt.New and Bolt.Diy with an open source one, so that it is easier to improve, change, and maintain. \r The goal is to improve maintaining and extend the capabilities of the terminal by adding Python \r support (Pyodide), Git (isomorphic-git), Node (npm & pnpm), common Linux commands (BusyBox as reference), \r Persistent storage (retained on reload), cloud storage integration (AWS, OneDrive, Mega.nz, etc), and more.",
+  "description": "A terminal emulator project using Remix, Vite, and TypeScript.",
   "main": "vite.config.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "vite build && remix build",
+    "start": "remix-serve build",
+    "deploy": "npm run build && wrangler pages deploy ./public"
   },
   "dependencies": {
+    "@remix-run/cloudflare": "^2.9.1",
+    "@remix-run/cloudflare-pages": "^2.9.1",
+    "@remix-run/react": "^2.9.1",
+    "@remix-run/serve": "^2.9.1",
     "jquery": "^3.7.1",
     "jquery.terminal": "^2.44.1",
     "pyodide": "^0.26.4",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240408.0",
+    "@remix-run/dev": "^2.9.1",
     "@types/jquery": "^3.5.32",
     "@types/node": "^22.10.2",
-    "@vitejs/plugin-react": "^4.0.0",
+    "@types/react": "^18.2.69",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.7.2",
-    "vite": "^4.0.0"
+    "vite": "^5.4.11",
+    "wrangler": "^3.51.0"
   },
   "keywords": [],
   "author": "Your Name",

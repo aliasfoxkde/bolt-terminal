@@ -11,7 +11,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "types": ["vite/client", "node", "jquery", "jquery.terminal"]
   },
   "include": [
     "src",
