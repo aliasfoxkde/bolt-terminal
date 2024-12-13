@@ -13,6 +13,14 @@ and Terminal, ability to create and execute scripts, and gives the AI full acces
 Additionally (WIP), the user can interact with the AI `agent` through the terminal, which allows, but is not limited to, extending the usefulness of Bolt.diy to being scriptable. These "scripts" could then be technically triggered by web workers or actions.
 
 ## Features
+- Terminal Editor (Helix editor, called with `vi`)
+- Git Terminal support Built-in (through isomorphic-git wrapper)
+- Python with module (pip/PyPi) support through the browser (using Pyodide)
+- Node (npm, etc.) passthrough in the Terminal.
+- Cloud storage integration (using WebDav protocal standard)
+- Color and Syntax support in Terminal (through Supports-Color)
+- Persistent Storage on reload (configured on local machine)
+- Advanced terminal features (using Terminal Kit)
 - Execute python files in the "project" or other directories.
 - Allow code in the IDE to be executed (such as with F5, Shift+F10, etc.)
 - Keep persistance of changes on refresh?

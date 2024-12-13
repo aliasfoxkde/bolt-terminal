@@ -1,0 +1,107 @@
+Integrate the Helix Editor (use "vi" from terminal to run):
+https://www.npmjs.com/package/@adobe/helix-cli
+
+Integrate isomorphic-git features/commands:
+- Main: git clone, pull, commit, add, status, push, and help
+- More: init, branch, log, fetch, show, config, diff, checkout, stash, revert, merge, tag, rebase.
+https://www.npmjs.com/package/isomorphic-git
+
+Change resize cursor to a "grab" hand, 
+Add a file and navigation menu on top.
+Add Explorer where you can open/edit files to the left. 
+Improve the look and feel.
+Add support for running node from the terminal.
+Add tab completion.
+List the directory you are in (like a Linux terminal)
+
+Future:
+Add file explorer and ability to preview files
+Right click context menu options (in file menu -left, and editor -right)
+Make mobile responsive with gestures (slide to open left menu, opens full width and can slide close, on top of everything with hamberger menu and search box)
+Ability to add files (drag and drop)
+Ability to interact directly with the console/dom (direct from terminal?)
+
+Fix/Add commands to terminal with switches:
+- General
+  - type, grep, shell, bash, sh, tree, man, kill, head
+  - ls, ln, cp, mv, cd, df, du, diff, seq, whoami
+- Networking
+  - nslookup, traceroute, ip, ifconfig, ftp, chmod, ping, 
+- Storage/Files
+  - cp, mv, chdir, gzip, tar, chksum, read, realpath, free
+- Programming Logic:
+  - &, do, done, fi, for, local, global, return, sleep, wait, sum, etc.
+- Other/custom:
+  - date, time, speedcheck, vi (helix editor)
+  - curl, wget, etc.
+
+Fix Python not loading modules:
+$ python
+Loading Pyodide...
+Pyodide loaded successfully!
+Python 3.11.3 (Pyodide)
+Type "exit()" to return to shell
+>>> import requests
+Traceback (most recent call last):
+  File "/lib/python311.zip/_pyodide/_base.py", line 571, in eval_code_async
+    await CodeRunner(
+  File "/lib/python311.zip/_pyodide/_base.py", line 394, in run_async
+    coroutine = eval(self.code, globals, locals)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<exec>", line 1, in <module>
+ModuleNotFoundError: No module named 'requests'
+
+Fix feedback not showing to console:
+$ ls
+$ ls -a
+$ cp
+Usage: cp <source> <destination>
+$ mkdir test
+$ cp test test2
+$ cd test2
+$ cd ..
+$ cd test
+$ cd ..
+$ cd test3
+No such file or directory: /test3
+$ 
+
+Fix build errors:
+pnpm run build
+
+> bolt-terminal@0.1.1 build C:\Repos\test\bolt-terminal
+> tsc && vite build
+
+error TS2688: Cannot find type definition file for 'node'.
+  The file is in the program because:
+    Entry point of type library 'node' specified in compilerOptions
+
+  tsconfig.json:15:30
+    15     "types": ["vite/client", "node", "jquery", "jquery.terminal"]
+                                    ~~~~~~
+    File is entry point of type library specified here.
+
+
+Found 1 error.
+
+ ELIFECYCLE  Command failed with exit code 2.
+
+
+
+
+
+Notes:
+.border-gray-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+
+.bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+
+
+#terminal-bar {
+
+}

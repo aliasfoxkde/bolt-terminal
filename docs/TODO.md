@@ -3,6 +3,23 @@ Lists pending tasks, enhancements, and features that need implementation, servin
 backlog for contributors.
 
 ## Tasks
+- Build and Deploy to Cloudflare Pages (v0.1.1 demo)
+- After migration to Vite + React + TS, fix issues:
+  - zip package fails to load, cannot import python modules
+  - commands no longer work, need to fix and add switches, etc.
+  - Add file explorer and ability to preview files
+  - Add header with navigation
+  - Add file menu at top of page
+  - Add right click context menu
+  - Ability to add files (drag and drop)
+  - Make mobile responsive
+  - Add ability to use node from the cli
+  - Add themes, graphics and icons (favicon, symbols, etc)
+  - Add shortcuts
+  - Documentation
+- More
+  - Ability to change theme/layout
+  - options/settings
 - Terminal Window
   - Tabs (mobile responsive)
   - Shortcuts/Hotkeys

@@ -20,7 +20,8 @@
   - list processes? list commands? date/time, reset (resets consoles?)
   - mount, umount, ed, expr, script, seq, setconsole, truncate, 
   - uptime, wait, diff, tftpd
-  - robocopy/rsync?
+- Custom
+  - robocopy/rsync?, lint, 
 - `code .` to open IDE (build logic to "talk" to)
 - Make simplier "zip" that supports compress/uncompress, and most formats/extension?
 - Make simple ftp (sftp, tftpd) client to simplify the commands.

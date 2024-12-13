@@ -3,20 +3,29 @@
   --sidebar-width: 200px;
 }
 
-/* General Layout */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
 #layout {
   display: flex;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  background-color: #1e1e1e;
 }
 
 #sidebar {
   width: var(--sidebar-width);
-  background-color: #1e1e1e;
-  color: #fff;
-  overflow-y: auto;
+  background-color: #18212f;
   position: relative;
+  border-right: 1px solid #3c3c3c;
+  transition: width 0.3s ease;
+}
+
+#sidebar.collapsed {
+  width: 30px;
 }
 
 #sidebar-resize-handle {
@@ -26,72 +35,132 @@
   width: 5px;
   height: 100%;
   cursor: ew-resize;
+  background-color: #3c3c3c;
+}
+
+#sidebar-toggle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #3c3c3c;
+  color: #cccccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+#sidebar-toggle:hover {
+  background: #4c4c4c;
 }
 
 #main-content {
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #2d2d2d;
+  min-width: 0;
 }
 
-/* Editor Pane */
 #editor-pane {
-  flex-grow: 1;
-  overflow-y: auto;
+  flex: 1;
+  background-color: #1e1e1e;
+  overflow: auto;
 }
 
-/* Terminal Bar */
 #terminal-bar {
   height: 30px;
-  background-color: #333;
-  color: #fff;
+  background-color: #1f2937;  
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
   cursor: ns-resize;
+  border-top: 1px solid #3c3c3c;
   user-select: none;
+  color: #cccccc;
 }
 
-#terminal-bar span {
-  font-weight: bold;
-}
-
-/* Terminal Container */
 #terminal-container {
-  width: 100%;
   height: var(--terminal-height);
-  background-color: #000;
+  background-color: #000000;
+  position: relative;
 }
 
-/* Full Screen Styles */
-#layout.fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+#terminal-container > div {
+  height: 100%;
 }
 
-#layout.fullscreen #sidebar,
-#layout.fullscreen #editor-pane {
-  display: none;
-}
-
-#layout.fullscreen #terminal-container {
-  height: calc(100vh - 30px); /* Adjust for terminal bar height */
-}
-
-#layout.fullscreen #terminal-bar {
-  cursor: default;
-}
-
-/* Full Screen Button */
 #fullscreen-button {
   background: none;
   border: none;
-  color: #fff;
+  color: #cccccc;
   cursor: pointer;
-  padding: 0;
-  font-size: 1.2em;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#fullscreen-button:hover {
+  color: #ffffff;
+}
+
+/* Terminal customization */
+.terminal {
+  --color: #ffffff;
+  --background: #000000;
+  --size: 1.2;
+  --font: "Consolas", monospace;
+}
+
+.terminal .terminal-output div span {
+  color: #ffffff !important;
+}
+
+.terminal .cmd span {
+  color: #ffffff !important;
+}
+
+.terminal .cmd .prompt {
+  color: #00ff00 !important;
+}
+
+/* Fullscreen mode */
+#layout:fullscreen {
+  background-color: #000000;
+}
+
+#layout:fullscreen #sidebar,
+#layout:fullscreen #editor-pane {
+  display: none;
+}
+
+#layout:fullscreen #terminal-container {
+  height: calc(100vh - 35px);
+}
+
+#layout:fullscreen #terminal-bar {
+  cursor: default;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3c3c3c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4c4c4c;
 }
