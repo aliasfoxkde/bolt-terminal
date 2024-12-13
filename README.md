@@ -1,9 +1,9 @@
 # README
-[Bolt-Terminal (demo here!)](https://terminal.boltdiy.com) is a project to replace the current WebContainer implimentation of the "Terminal" used by 
-Bolt.New and Bolt.Diy with an open source one, so that it is easier to improve, change, and maintain. 
-The goal is to improve maintaining and extend the capabilities of the terminal by adding Python 
-support (Pyodide), Git (isomorphic-git), Node (npm & pnpm), common Linux commands (BusyBox as reference), 
-Persistent storage (retained on reload), cloud storage integration (AWS, OneDrive, Mega.nz, etc), and more.
+[Bolt-Terminal (demo here!)](https://terminal.boltdiy.com) is a project to replace the current WebContainer implimentation of the "Terminal" 
+used by Bolt.New and Bolt.Diy with an open source one, so that it is easier to improve, change, and maintain. The goal is to improve 
+maintaining and extend the capabilities of the terminal by adding Python support (Pyodide), Git (isomorphic-git), Node (npm & pnpm), common 
+Linux commands (BusyBox as reference), Persistent storage (retained on reload using WebDav protocal standard), cloud storage integration 
+(AWS, OneDrive, Mega.nz, etc), and more.
 
 ## Methodology
 The core principle is to maintain a shared library of functions between the UI and Terminal, so that anything that 
