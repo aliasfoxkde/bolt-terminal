@@ -1,0 +1,12 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.terminal {
+  height: 100vh;
+  --color: rgba(255, 255, 255, 0.8);
+  --background: #000;
+}

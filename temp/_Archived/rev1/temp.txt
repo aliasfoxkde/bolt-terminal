@@ -1,0 +1,42 @@
+const fs = new FS('bolt-fs');
+
+// Add commands like:
+case 'ls':
+  const files = await fs.promises.readdir('.');
+  term.writeln(`\r\n${files.join('\n')}`);
+  break;
+
+
+case 'git':
+  const gitCommand = args[0];
+  switch (gitCommand) {
+    case 'init':
+      await git.init({ fs, dir: '.' });
+      term.writeln('\r\nInitialized git repository');
+      break;
+    // Add more git commands
+  }
+  break;
+
+
+let pyodide: any = null;
+
+const initPyodide = async () => {
+  pyodide = await loadPyodide({
+    indexURL: "https://cdn.jsdelivr.net/pyodide/v0.23.0/full/"
+  });
+};
+
+// Add python command:
+case 'python':
+  if (!pyodide) {
+    term.writeln('\r\nInitializing Python...');
+    await initPyodide();
+  }
+  try {
+    const result = await pyodide.runPython(args.join(' '));
+    term.writeln(`\r\n${result}`);
+  } catch (error) {
+    term.writeln(`\r\nError: ${error}`);
+  }
+  break;

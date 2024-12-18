@@ -13,21 +13,28 @@ and Terminal, ability to create and execute scripts, and gives the AI full acces
 Additionally (WIP), the user can interact with the AI `agent` through the terminal, which allows, but is not limited to, extending the usefulness of Bolt.diy to being scriptable. These "scripts" could then be technically triggered by web workers or actions.
 
 ## Features
-- Terminal Editor (Helix editor, called with `vi`)
-- Git Terminal support Built-in (through isomorphic-git wrapper)
-- Python with module (pip/PyPi) support through the browser (using Pyodide)
-- Node (npm, etc.) passthrough in the Terminal.
-- Cloud storage integration (using WebDav protocal standard)
-- Color and Syntax support in Terminal (through Supports-Color)
-- Persistent Storage on reload (configured on local machine)
-- Advanced terminal features (using Terminal Kit)
-- Execute python files in the "project" or other directories.
-- Allow code in the IDE to be executed (such as with F5, Shift+F10, etc.)
-- Keep persistance of changes on refresh?
-- Improve performance and utility.
-- Ability to talk to the web container.
-- Consider using this as terminal with aliases?
-- Consider replacing XTerm/Web Container with Pyodide?
+- [x] Interactive web-based cli terminal (using [jQuery Terminal](https://github.com/jcubic/jquery.terminal))
+- [x] Python with module (pip/PyPi) support through the browser (using [pyodide](https://github.com/pyodide/pyodide))
+- [ ] Git Terminal support Built-in ([isomorphic-git](https://github.com/isomorphic-git/isomorphic-git) wrapper)
+- [ ] Cloud storage integration (using [WebDav](https://www.npmjs.com/package/webdav)|[Client](https://github.com/perry-mitchell/webdav-client)|[FS](https://github.com/perry-mitchell/webdav-fs))
+- [ ] SSH and Telnet support (using [xterm.js](https://github.com/xtermjs/xterm.js)
+- [ ] Native Node (npm, pnpm, etc.) passthrough in the Terminal.
+- [ ] Advanced terminal features (using [Terminal Kit](https://github.com/cronvel/terminal-kit))
+- [ ] Terminal Editor ([Helix](https://github.com/helix-editor/helix), alias `vi`)
+- [ ] Color and Syntax support in Terminal (through [Supports-Color](https://github.com/chalk/supports-color))
+- [ ] Persistent Storage on reload (configured with local storage)
+- [ ] Execute python files in the "project" or other directories.
+- [ ] Allow code in the IDE to be executed (such as with F5, Shift+F10, etc.)
+- [ ] Keep persistence of changes on refresh
+- [ ] Improve performance and utility.
+- [ ] Ability to interact with the DOM Console and Pure JS
+- [ ] Ability for AI Agent to talk to the web container.
+- [ ] Consider using this as terminal with aliases?
+- [ ] Standard terminal commands (ls, ln, cd, cat, mkdir, pwd, touch, rm, echo, cp, mv, curl, help, etc.)
+- [ ] Isolated and Secure Environment
+- [ ] Wasm hot/pre-loading and extract "modules" on first run
+- [ ] Add performance buffering and caching
+- [ ] ES Module Support
 
 ## Documentation  
 - [README.md](#): Serves as the main entry point for the project documentation. It provides an overview of the project, including its purpose, key features, and usage instructions. It is designed to give new users and contributors a quick understanding of what the project is about and how to get started.  

@@ -47,7 +47,8 @@ document.addEventListener("keydown", (event) => {
 async function main() {
     let indexURL = "https://cdn.jsdelivr.net/pyodide/v0.26.4/full/";
     const urlParams = new URLSearchParams(window.location.search);
-    const buildParam = urlParams.get("build");
+    // const buildParam = urlParams.get("build");
+    const buildParam = urlParams.get("pyc");
     if (buildParam) {
         if (["full", "debug", "pyc"].includes(buildParam)) {
             indexURL = indexURL.replace(
