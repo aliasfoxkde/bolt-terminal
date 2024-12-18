@@ -1,0 +1,28 @@
+I created a demo terminal in the browser. My intent is to replace the limited Web Container version that comes with Bolt.Diy (main open source branch of Bolt.New) and it's the only component that is not open source. But the main reason to replace it is it's not very easy to modify or extend.
+
+The demo is already using jQuery Terminal for the CLI and pyodide for Python integration. But I would like to add shell command functions/aliases (ls, ln, cd, cat, mkdir, pwd, touch, rm, echo, cp, mv, curl, help, etc.) with all command line switches.
+
+I would also like to add git support using isomorphic-git (like git status, add, commit, clone, push, pull, etc.). Last high priority item is to add node (npm) passthrough support through the CLI (because it's already installed and Vite+Remix is used to build & deploy it).
+
+
+
+
+I created a demo terminal in the browser. My intent is to replace the limited Web Container version that comes with Bolt.Diy (main open source branch of Bolt.New) and it's the only component that is not open source. But the main reason to replace it is it's not very easy to modify or extend.
+
+The demo is already using jQuery Terminal for the CLI and pyodide for Python integration. But I would like to add shell command functions/aliases (ls, ln, cd, cat, mkdir, pwd, touch, rm, echo, cp, mv, curl, help, etc.) with all command line switches.
+
+I would also like to add git support using isomorphic-git (like git status, add, commit, clone, push, pull, etc.). Last high priority item is to add node (npm) passthrough support through the CLI (because it's already installed and Vite+Remix is used to build & deploy it).
+
+Look at the code and files before updating and use Chain of Thought Reasoning to break down tasks. Make sure to look in the ./README.md, docs/TODO.md (checklist and progress), docs/CHANGELOG, etc.
+
+Check off items and update README, TODO, and CHANGELOG as you make progress.
+
+
+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
+
+UNDER NO CIRCUMSTANCES LEAVE INCOMPLETE OR FILLER CODE!!!!!!!!!!!!!!!
+
+
+
+
+Using Vite + Remix create me a command line interface using jQuery Terminal for the CLI and pyodide for Python integration. Add shell command functions/aliases (ls, ln, cd, cat, mkdir, pwd, touch, rm, echo, cp, mv, curl, help, etc.). I would also like to add git support using isomorphic-git (like git status, add, commit, clone, push, pull, etc.). Last high priority item is to add node (npm) passthrough support through the CLI (because it's already installed and Vite+Remix is used to build & deploy it).
