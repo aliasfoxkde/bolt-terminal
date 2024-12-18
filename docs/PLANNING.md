@@ -21,7 +21,7 @@
   - mount, umount, ed, expr, script, seq, setconsole, truncate, 
   - uptime, wait, diff, tftpd
 - Custom
-  - robocopy/rsync?, lint, 
+  - robocopy/rsync?, lint, git, npm/mode, ssh/ftp/telnet, etc.
 - `code .` to open IDE (build logic to "talk" to)
 - Make simplier "zip" that supports compress/uncompress, and most formats/extension?
 - Make simple ftp (sftp, tftpd) client to simplify the commands.

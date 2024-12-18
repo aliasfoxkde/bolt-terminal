@@ -6,6 +6,7 @@ Integrate isomorphic-git features/commands:
 - More: init, branch, log, fetch, show, config, diff, checkout, stash, revert, merge, tag, rebase.
 https://www.npmjs.com/package/isomorphic-git
 
+Initial:
 Change resize cursor to a "grab" hand, 
 Add a file and navigation menu on top.
 Add Explorer where you can open/edit files to the left. 
@@ -87,8 +88,10 @@ Found 1 error.
  ELIFECYCLE  Command failed with exit code 2.
 
 
+Reasoning (planned):
+Work through the problem systematically. Blank preview page now. you are not helping. update the docs to keep track of progress. Keep track of changes. Check them off as you do them. and break things down into smaller steps. Build in debugging to self check. Validate that each step is correct and that your logic/reasoning is valid.
 
-
+Plan and update the docs as well as use them for reference (TODO.md, README.md, PLANNING.md, etc). Implement them and fix the issues:
 
 Notes:
 .border-gray-700 {
