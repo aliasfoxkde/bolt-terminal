@@ -187,6 +187,8 @@ backlog for contributors.
 
 ### Python Module Loading
 
+-   [ ] Shell Comands are not working in terminal (executing ls, cd, etc. appear to do nothing)
+-   [ ] The terminal does not display the current path
 -   [x] Fix the issue where Python modules (e.g., `requests`) cannot be imported in the Pyodide environment.
     -   [x] Research the cause of the module loading issue.
     -   [x] Implement a solution to ensure that modules can be imported correctly.
