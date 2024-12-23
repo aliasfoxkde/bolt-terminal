@@ -1,0 +1,5 @@
+Objective: Work through the problem systematically, using chain of thought reasoning; create a plan, keep documentation up to date and break down each task into steps. 
+Try to complete each step, attempt each 3 times. If unable, break the step into logical sub-steps. Try to complete those steps and work through your issues.
+If you fail more than three times, and the step is not strictly required, continue to the next task. Otherwise, communicate with the user for feedback on course of action. Build in debugging logs to self check. Validate that each step is correct and that your logic/reasoning is valid.
+
+Start by reviewing the directory tree, README.md file, and continuing off with steps outlined in docs/TODO.md. Update documents as you complete steps (such as README, TODO, CHANGELOG, USAGE, and PLANNING).

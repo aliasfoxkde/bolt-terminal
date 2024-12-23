@@ -30,10 +30,17 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [ ] Ability to interact with the DOM Console and Pure JS
 - [ ] Ability for AI Agent to talk to the web container.
 - [ ] Consider using this as terminal with aliases?
-- [ ] Standard terminal commands (ls, ln, cd, cat, mkdir, pwd, touch, rm, echo, cp, mv, curl, help, etc.)
+- [ ] Standard terminal commands (alias, sh, ls, ln, cd, cat, df, du, mkdir, pwd, touch, rm, echo, cp, mv, rm, seq, curl, 
+      help, find, grep, chmod, clear, u/mount, chksum, diff, env, head, halt, kill, id, logger, touch, tree, man, tail, users, 
+	  wget, uptime, processes, etc.)
 - [ ] Isolated and Secure Environment
 - [ ] Wasm hot/pre-loading and extract "modules" on first run
 - [ ] Add performance buffering and caching
+- [ ] Verbose logging stored by Type for AI retrieval
+- [ ] Custom tools (date, time, ftp, vi, rsync, speedtest, zip (py7zip all-in-one), etc.)
+- [ ] Add shell support for scripting (break, continue, if, do, for, while, fi, true, false, sleep, bool, xargs)
+- [ ] Add shell support for networking commands (ip, ifconfig, ifdown, ifup, ping, traceroute, netcat, netstat, hostname, etc.)
+- [ ] Other shell commands (TBD: shell, bash, su, sudo, whoami, arp, beep, crond, etc.)
 - [ ] ES Module Support
 
 ## Documentation  
@@ -58,6 +65,9 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [OpenZenith]()
 - [ArcPrizeSolver]()
 - [Enneura]()
+
+## Resources
+- [BusyBox Comands](https://www.busybox.net/BusyBox.html)
 
 ## Notes
 -

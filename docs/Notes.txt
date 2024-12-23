@@ -9,3 +9,5 @@ https://github.com/aliasfoxkde/bolt-terminal
 
 System:
 Break down the problem systematically.
+
+Read the `docs/Instructions.txt` file and execute them.
