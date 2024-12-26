@@ -22,6 +22,9 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [ ] Advanced terminal features (using [Terminal Kit](https://github.com/cronvel/terminal-kit))
 - [ ] Terminal Editor ([Helix](https://github.com/helix-editor/helix), alias `vi`)
 - [ ] Color and Syntax support in Terminal (through [Supports-Color](https://github.com/chalk/supports-color))
+- [ ] Prototype folder/file syncranization (using [boltops](https://www.npmjs.com/package/boltops))
+- [ ] SQLite Database CLI support for Web (through [SQL.JS](https://github.com/sql-js/sql.js)
+- [ ] Ability to extend the shell/terminal commands by simply adding command wrappers to src/bin
 - [ ] Persistent Storage on reload (configured with local storage)
 - [ ] Execute python files in the "project" or other directories.
 - [ ] Allow code in the IDE to be executed (such as with F5, Shift+F10, etc.)
@@ -41,6 +44,7 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [ ] Add shell support for scripting (break, continue, if, do, for, while, fi, true, false, sleep, bool, xargs)
 - [ ] Add shell support for networking commands (ip, ifconfig, ifdown, ifup, ping, traceroute, netcat, netstat, hostname, etc.)
 - [ ] Other shell commands (TBD: shell, bash, su, sudo, whoami, arp, beep, crond, etc.)
+- [ ] Support for building for Cloudflare Pages and standalone applications.
 - [ ] ES Module Support
 
 ## Documentation  
