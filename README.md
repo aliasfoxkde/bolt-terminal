@@ -17,15 +17,15 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [x] Python with module (pip/PyPi) support through the browser (using [pyodide](https://github.com/pyodide/pyodide))
 - [ ] Git Terminal support Built-in ([isomorphic-git](https://github.com/isomorphic-git/isomorphic-git) wrapper)
 - [ ] Cloud storage integration (using [WebDav](https://www.npmjs.com/package/webdav)|[Client](https://github.com/perry-mitchell/webdav-client)|[FS](https://github.com/perry-mitchell/webdav-fs))
-- [ ] SSH and Telnet support (using [xterm.js](https://github.com/xtermjs/xterm.js)
+- [ ] SSH and Telnet support (using [xterm.js](https://github.com/xtermjs/xterm.js))
 - [ ] Native Node (npm, pnpm, etc.) passthrough in the Terminal.
 - [ ] Advanced terminal features (using [Terminal Kit](https://github.com/cronvel/terminal-kit))
 - [ ] Terminal Editor ([Helix](https://github.com/helix-editor/helix), alias `vi`)
 - [ ] Color and Syntax support in Terminal (through [Supports-Color](https://github.com/chalk/supports-color))
 - [ ] Prototype folder/file syncranization (using [boltops](https://www.npmjs.com/package/boltops))
-- [ ] SQLite Database CLI support for Web (through [SQL.JS](https://github.com/sql-js/sql.js)
+- [ ] SQLite Database CLI support for Web (through [SQL.JS](https://github.com/sql-js/sql.js))
 - [ ] Ability to extend the shell/terminal commands by simply adding command wrappers to src/bin
-- [ ] Persistent Storage on reload (configured with local storage)
+- [ ] Persistent Storage on reload (configured with local/browser storage)
 - [ ] Execute python files in the "project" or other directories.
 - [ ] Allow code in the IDE to be executed (such as with F5, Shift+F10, etc.)
 - [ ] Keep persistence of changes on refresh
@@ -41,10 +41,11 @@ Additionally (WIP), the user can interact with the AI `agent` through the termin
 - [ ] Add performance buffering and caching
 - [ ] Verbose logging stored by Type for AI retrieval
 - [ ] Custom tools (date, time, ftp, vi, rsync, speedtest, zip (py7zip all-in-one), etc.)
-- [ ] Add shell support for scripting (break, continue, if, do, for, while, fi, true, false, sleep, bool, xargs)
-- [ ] Add shell support for networking commands (ip, ifconfig, ifdown, ifup, ping, traceroute, netcat, netstat, hostname, etc.)
+- [ ] Shell support for scripting (break, continue, if, do, for, while, fi, true, false, sleep, bool, xargs)
+- [ ] Shell support for networking commands (ip, ifconfig, ifdown, ifup, ping, traceroute, netcat, netstat, hostname, etc.)
 - [ ] Other shell commands (TBD: shell, bash, su, sudo, whoami, arp, beep, crond, etc.)
 - [ ] Support for building for Cloudflare Pages and standalone applications.
+- [ ] TTS, ImageGen, Image Modification and etc. support through terminal/scripts (TBD).
 - [ ] ES Module Support
 
 ## Documentation  
